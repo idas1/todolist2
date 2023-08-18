@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    background-color: #564787;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    background-color: #EBFCFF;
+    width: 30%;
+    height: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.program  {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* CSS title */
+
+.program h1{
+    color: #101935;
+    margin-bottom: 30px;
+}
+
+
+/* CSS content */
+
+.program .content {
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+}
+
+/* CSS inputValue */
+
+.content .inputValue {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #101935;
+    padding-bottom: 10px;
+}
+
+.content .inputValue input {
+    width: 80%;
+    font-size: 18px;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+.content .inputValue button#add {
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: #101935;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* CSS todoList */
+
+.content .todoList{
+    margin-top: 10px;
+}
+.content .todoList li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #101935;
+}
+
+.content .todoList li span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 60%;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.content .todoList li .todoList_button {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .todoList li .todoList_button i {
+    cursor: pointer;
+}
+
+.content .todoList li.completed {
+    color: #aaa;
+}
+
+.content .todoList li.completed span{
+    text-decoration: line-through;
+}
